@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Core Analytics</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <meta name="theme-color" content="#003366">     
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CoreAnalytics">
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          // Registro corregido para GitHub Pages
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+    </script>
+
+    <meta property="og:title" content="Core Analytics">
+    <meta property="og:description" content="Científico de datos Apuestas Deportivas Inteligentes.">
+    <meta property="og:image" content="https://scontent.faca1-1.fna.fbcdn.net/v/t39.30808-6/505519150_122093911004926783_6074424376219534284_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Ae9ANnYbHPUQ7kNvwGmLUAE&_nc_oc=AdnjW0ylVXtOVn6VVGb_ujKYTArNun47O1AoK1EBTDPIv-RjB_fEV3DAtV2UMc3691BoTcEwQjXadjIgDrRMWzjV&_nc_zt=23&_nc_ht=scontent.faca1-1.fna&_nc_gid=CHlF-PcKvHeAtu0ANnMALQ&oh=00_AfmzbXz_TSgSVxp9FvIZcczaHKfB3iijn3vWw1q2qLJa9g&oe=69568F23">
+    <meta property="og:url" content="https://coreanalyticsmx.netlify.app">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/jpg" href="https://scontent.faca1-1.fna.fbcdn.net/v/t39.30808-6/505519150_122093911004926783_6074424376219534284_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Ae9ANnYbHPUQ7kNvwGmLUAE&_nc_oc=AdnjW0ylVXtOVn6VVGb_ujKYTArNun47O1AoK1EBTDPIv-RjB_fEV3DAtV2UMc3691BoTcEwQjXadjIgDrRMWzjV&_nc_zt=23&_nc_ht=scontent.faca1-1.fna&_nc_gid=CHlF-PcKvHeAtu0ANnMALQ&oh=00_AfmzbXz_TSgSVxp9FvIZcczaHKfB3iijn3vWw1q2qLJa9g&oe=69568F23">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #003366; 
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Inter', sans-serif;
+
+            /* Protección del Notch e indicador inferior */
+            padding-top: env(safe-area-inset-top); 
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+        .link-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .link-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex justify-center p-4">
+
+    <div class="max-w-md w-full flex flex-col items-center text-center">
+        
+        <div class="relative mb-4 mt-10"> 
+            <div class="w-32 h-32 rounded-full border-4 border-white shadow-xl overflow-hidden bg-white">
+                <img src="https://scontent.faca1-1.fna.fbcdn.net/v/t39.30808-6/505519150_122093911004926783_6074424376219534284_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Ae9ANnYbHPUQ7kNvwGmLUAE&_nc_oc=AdnjW0ylVXtOVn6VVGb_ujKYTArNun47O1AoK1EBTDPIv-RjB_fEV3DAtV2UMc3691BoTcEwQjXadjIgDrRMWzjV&_nc_zt=23&_nc_ht=scontent.faca1-1.fna&_nc_gid=CHlF-PcKvHeAtu0ANnMALQ&oh=00_AfmzbXz_TSgSVxp9FvIZcczaHKfB3iijn3vWw1q2qLJa9g&oe=69568F23" 
+                     alt="Core Analytics" 
+                     onerror="this.src='foto_perfil.jpg'"
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <h1 class="text-white text-2xl font-bold mb-1 drop-shadow-lg">Core Analytics</h1>
+        <p class="text-green-100 text-sm mb-8 font-medium bg-black/20 px-4 py-2 rounded-xl inline-block">
+            Apuestas deportivas inteligentes con Core Analytics. 🎯 Basamos nuestras recomendaciones en datos, probabilidad y ciencia de datos.
+        </p>
+
+        <div class="w-full space-y-4">
+            <div class="pb-2">
+                <h2 class="text-white text-lg font-bold uppercase tracking-wider drop-shadow-md">Canal de apuestas de Telegram</h2>
+                <div class="h-1 w-20 bg-yellow-400 mx-auto mt-1 rounded-full"></div>
+            </div>
+
+            <a href="https://t.me/coreanalyticsmx" target="_blank" class="link-card flex items-center p-4 rounded-xl text-gray-800 font-bold w-full border-2 border-yellow-400">
+                <i class="fab fa-telegram text-xl w-8 text-sky-500"></i>
+                <span class="flex-grow text-lg">&Uacute;nete al Canal de Telegram</span>
+            </a>
+
+            <div class="pt-4 pb-2">
+                <p class="text-white/70 text-xs uppercase tracking-widest font-bold">Redes Sociales</p>
+            </div>
+
+            <a href="https://www.tiktok.com/@core.analytics.mx" target="_blank" class="link-card flex items-center p-4 rounded-xl text-gray-800 font-semibold w-full">
+                <i class="fab fa-tiktok text-xl w-8 text-black"></i>
+                <span class="flex-grow">TikTok</span>
+            </a>
+
+            <a href="https://www.instagram.com/core.analytics.mx" target="_blank" class="link-card flex items-center p-4 rounded-xl text-gray-800 font-semibold w-full">
+                <i class="fab fa-instagram text-xl w-8 text-pink-600"></i>
+                <span class="flex-grow">Instagram</span>
+            </a>
+
+            <a href="https://www.facebook.com/core.analytics.mx" target="_blank" class="link-card flex items-center p-4 rounded-xl text-gray-800 font-semibold w-full">
+                <i class="fab fa-facebook text-xl w-8 text-blue-600"></i>
+                <span class="flex-grow">Facebook</span>
+            </a>
+        </div>
+
+        <footer class="mt-12 mb-8 text-white/60 text-xs">
+            &copy; 2025 Core Analytics - Todos los derechos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
