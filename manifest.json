@@ -14,10 +14,10 @@
     "type": "image/png"
   }
   ],
-  "start_url": "/",
+  "start_url": "/Landing-page/",
   "background_color": "#ffffff",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/Landing-page/",
   "theme_color": "#000000"
 }
 
